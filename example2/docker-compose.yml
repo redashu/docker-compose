@@ -1,0 +1,14 @@
+version: "3.8" # version must be always in string format 
+services:
+ myapp1:
+  image: nginx
+  container_name: ashuc1 # optional field
+  ports:
+   - "1133:80"  # similar to docker run -p 1133:80 
+  volumes:
+   - ./webapp:/usr/share/nginx/html/
+  networks:
+   - mynet
+
+networks:
+ mynet:   # created custom network named mynet and type of network is bridge 

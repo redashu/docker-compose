@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+ myapp1:
+  image: ashuweb:v1
+  build: .  # use dockerfile to build 
+  container_name: ashuc1 # optional field
+  ports:
+   - "1133:80"  # similar to docker run -p 1133:80 

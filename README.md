@@ -19,6 +19,9 @@
 
 [link compose install] ('https://docs.docker.com/compose/install/')
 
+## This is also important to understand version of compose file 
+## browse here
 
+[compose file version] ('https://docs.docker.com/compose/compose-file/')
  
  

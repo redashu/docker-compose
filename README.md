@@ -1,6 +1,6 @@
 # docker-compose The Next level orchestration Engine 
  
-         <img src="https://github.com/redashu/docker-compose/blob/main/compose.jpg">
+         <img src="compose.png">
 ##  Some Important points 
 
 <ul>

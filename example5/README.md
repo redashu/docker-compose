@@ -3,4 +3,6 @@
 ## when dockerfile name is not dockerfile 
 
 
-<img src="com.png">
+```
+docker-compose -f ashu.yml up -d
+```

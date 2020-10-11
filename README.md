@@ -1,6 +1,6 @@
 # docker-compose The Next level orchestration Engine 
  
-         <img src="compsoe.png">
+         <img src="compose.png">
 ##  Some Important points 
 
 <ul>

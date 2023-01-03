@@ -1,0 +1,18 @@
+version: '3.8'
+volumes: # creating volume 
+  ashu-db-vol2: # name of volume 
+networks: # for creating network 
+  ashubr-net: # name of network bridge 
+services:
+  ashudb-app:
+    image: mysql
+    container_name: ashudbc1
+    volumes: # mounting volume 
+    - "ashu-db-vol2:/var/lib/mysql/"
+    environment: # setting mysql root user password 
+      MYSQL_ROOT_PASSWORD: "Oracle@098"
+    env_file:
+    - /home/ashu/ashu-apps/ashu-compose/user_pass
+    networks: # using bridge 
+    - ashubr-net 
+

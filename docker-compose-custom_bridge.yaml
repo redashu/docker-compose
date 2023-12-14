@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  my_container:
+    image: alpine:latest
+    networks:
+      my_network:
+        ipv4_address: 172.18.0.200  # Specify the desired static IP address for the container
+    command: tail -f /dev/null  # Keep the container running to prevent it from exiting immediately
+    # Add other container configurations as needed
+
+networks:
+  my_network:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.18.0.0/24  # Specify the subnet for the custom bridge network
+
